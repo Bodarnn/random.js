@@ -143,7 +143,7 @@ var RNG = (function () {
 
     // --- CONSIDERING ---
 
-    // Clone a psudorandom number generator
+    // Clone a pseudorandom number generator
     Object.defineProperty(RNG.prototype, 'clone', {
         writable: true, enumerable: false, configurable: true,
         value: function () {
@@ -159,7 +159,7 @@ var RNG = (function () {
             if (n < 0) throw new RangeError('n must be greater than 0');
 
             for (var i = 0; i < n; i++) _next(this);
-            return this;
+            return this.state;
         }
     });
 
@@ -202,3 +202,4 @@ var RNG = (function () {
     return RNG;
 
 })();
+
