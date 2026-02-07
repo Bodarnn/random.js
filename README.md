@@ -1,5 +1,5 @@
 ```JS
-// Create an RNG instance
+// Create a pseudorandom number generator
 
 const seed = 8675309;
 const random = new RNG(seed);
@@ -7,7 +7,7 @@ const random = new RNG(seed);
 console.log(random); // {state: 8675309}
 ```
 ```JS
-// Progress an RNG instance
+// Progress a pseudorandom number generator
 
 const seed = 8675309;
 const random = new RNG(seed);
